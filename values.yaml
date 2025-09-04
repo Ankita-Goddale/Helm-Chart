@@ -1,0 +1,33 @@
+namespace: ankita
+
+mongodb:
+  replicas: 1
+  labels:
+    app: mongodb
+  name: mongodb
+  image:
+    repository: mongo
+    tag: latest
+  port: 27017
+  service:
+    port: 27017
+  type: Opaque
+  database: bXlkYXRhYmFzZQ==
+  uri: bW9uZ29kYjovL2Fua2l0YS1tb25nb2RiLXNlcnZpY2U6MjcwMTcvbXlEYXRhYmFzZQ==
+  secret: MTIzNA==
+  email: YW5raXRhZ29kZGFsZUBnbWFpbC5jb20=
+  password: eXhvcSBianVrIHJkbnQgYWx6cA==
+ 
+userprofile:
+  replicas: 2
+  labels:
+    app: userprofile
+  name: usernode-js
+  image:
+    repository: saiteja2502/userprofileretail
+    tag: latest
+  port: 3130
+  service:
+    port: 3130
+    type: LoadBalancer
+
