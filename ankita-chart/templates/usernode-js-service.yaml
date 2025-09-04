@@ -10,4 +10,4 @@ spec:
       targetPort: {{ .Values.userprofile.port }}
       protocol: TCP
   selector:
-    app: {{ .Values.userprofile.name }}
+    app: {{ .Values.userprofile.labels.app }}

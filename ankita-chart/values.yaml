@@ -13,7 +13,7 @@ mongodb:
     port: 27017
   type: Opaque
   database: bXlkYXRhYmFzZQ==
-  uri: bW9uZ29kYjovL21vbmdvZGI6MjcwMTcvbXlEYXRhYmFzZQ==
+  uri: bW9uZ29kYjovL2Fua2l0YS1tb25nb2RiLXNlcnZpY2U6MjcwMTcvbXlEYXRhYmFzZQ==
   secret: MTIzNA==
   email: YW5raXRhZ29kZGFsZUBnbWFpbC5jb20=
   password: MzEzMA==
@@ -29,6 +29,6 @@ userprofile:
     tag: latest
   port: 3130
   service:
-    port: 3130
+    port: 80
     type: LoadBalancer
 
